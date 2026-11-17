@@ -14,3 +14,12 @@ library(httr2)
 library(purrr)
 ```
 
+```{r}
+imdb_snapshots <- readRDS("data/imdb_snapshots.rds")
+
+imdb_snapshots
+
+imdb_snapshots |>
+  count(snap_year)
+```
+
